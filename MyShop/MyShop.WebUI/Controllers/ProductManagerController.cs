@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MyShop.DataAccess.InMemory;
-using MyShop.DataAccess;
 using MyShopCore;
 using MyShop.WebUI;
 using MyShopCore.Models;
+
 
 namespace MyShop.WebUI.Controllers
 {
