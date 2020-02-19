@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyShop.DataAccess.InMemory
 {
+    //it uses the generics to pass the table and based upon it will execute 
     public class InMemoryRepository<T> where T:BaseEntity //whenever T is passing it will takes Id from BaseEntity 
     {
         ObjectCache cache = MemoryCache.Default;
@@ -25,7 +26,7 @@ namespace MyShop.DataAccess.InMemory
         }
         public void commit()
         {
-            cache["classname"] = items;
+            cache[className] = items;
         }
         public void Insert(T t)
         {
